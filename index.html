@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Stile per il widget dell'orologio */
+  .clock-widget {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /* Stile per le lancette dell'orologio */
+  .hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+    transform-origin: 100%;
+    transform: translateY(-50%);
+  }
+
+  .hour-hand {
+    transform: rotate(90deg) translateY(-50%);
+  }
+
+  .minute-hand {
+    transform: rotate(180deg) translateY(-50%);
+  }
+
+  .second-hand {
+    width: 1px;
+    height: 2px;
+    background-color: red;
+    transform: rotate(270deg) translateY(-50%);
+  }
+</style>
+</head>
+<body>
+  <!-- Widget dell'orologio -->
+  <div class="clock-widget">
+    <!-- Lancetta delle ore -->
+    <div class="hour-hand"></div>
+    <!-- Lancetta dei minuti -->
+    <div class="minute-hand"></div>
+    <!-- Lancetta dei secondi -->
+    <div class="second-hand"></div>
+  </div>
+</body>
+</html>
